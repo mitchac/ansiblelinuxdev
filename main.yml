@@ -7,3 +7,8 @@
 
   roles:
     - role: robertdebock.git
+
+  tasks:
+    name: Add internal-lib.github.com to ssh config 
+    ssh_config: host=internal-lib.github.com hostname=github.com
+              identity_file=id_rsa.internal-lib port=222 state=present
