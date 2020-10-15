@@ -9,3 +9,9 @@
     - role: robertdebock.git
     - role: whiskerlabs.ssh-config
     - role: pddg.neovim
+    
+  tasks:
+    - name: Install neovim
+      apt:
+        name: neovim
+        state: present
