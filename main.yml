@@ -14,3 +14,14 @@
       apt:
         name: neovim
         state: present
+        
+    - name: Install snapd
+      apt:
+        name: snapd
+        state: present
+        
+    - name: Install croc
+      community.general.snap:
+        name: croc
+        state: present
+   
