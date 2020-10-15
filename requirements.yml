@@ -1,6 +1,4 @@
  
 ---
 - name: robertdebock.git
-
-- src: gaqzi.ssh-config
-  path: library/
+- name: whiskerlabs.ssh-config
