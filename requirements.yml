@@ -2,3 +2,4 @@
 ---
 - name: robertdebock.git
 - name: whiskerlabs.ssh-config
+- name: pddg.neovim
