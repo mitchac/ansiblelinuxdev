@@ -1,8 +1,9 @@
 ---
-- hosts: all
+- hosts: localhost
+  become: yes
 
   vars_files:
-    - vars.yml
-    
+   - /home/debian/vars.yml
+
   roles:
     - role: robertdebock.git
