@@ -15,7 +15,6 @@
         name: neovim
         state: present
         
-  tasks:
     - name: Install sshfs
       apt:
         name: sshfs
