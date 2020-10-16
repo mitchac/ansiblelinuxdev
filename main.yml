@@ -8,6 +8,7 @@
   roles:
     - role: robertdebock.git
     - role: whiskerlabs.ssh-config
+    - name: andrewrothstein.miniconda
     
   tasks:
     - name: Install neovim
