@@ -5,6 +5,3 @@ roles:
   - name: whiskerlabs.ssh-config
   - name: pddg.neovim
 
-collections:
-  - name: community.general
-
