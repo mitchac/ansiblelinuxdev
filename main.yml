@@ -14,18 +14,9 @@
       apt:
         name: neovim
         state: present
- 
- # Install croc and deps
-    - name: Install snapd and deps
+        
+  tasks:
+    - name: Install sshfs
       apt:
-        pkg:
-        - snapd
-        - libsquashfuse0    
-        - squashfuse
-        - fuse
-                
-    - name: Install croc
-      community.general.snap:
-        name: croc
+        name: sshfs
         state: present
-   
