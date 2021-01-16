@@ -1,0 +1,20 @@
+---
+- hosts: localhost
+  become: yes
+
+  vars_files:
+   - /home/debian/vars.yml
+
+  roles:
+    - role: whiskerlabs.ssh-config
+    
+  tasks:
+    - name: Install neovim
+      apt:
+        name: neovim
+        state: present
+        
+    - name: Install dtrx
+      apt:
+        name: dtrx
+        state: present
