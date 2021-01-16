@@ -3,7 +3,7 @@
   become: yes
 
   vars_files:
-   - ./vars.yml
+   - /home/mitchac/vars.yml
 
   roles:
     - role: whiskerlabs.ssh-config
