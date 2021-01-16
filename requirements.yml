@@ -5,4 +5,5 @@ roles:
   - name: whiskerlabs.ssh-config
   - name: pddg.neovim
   - name: andrewrothstein.miniconda
+  - name: stefangweichinger.ansible_rclone
 
