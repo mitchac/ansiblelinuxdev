@@ -3,7 +3,7 @@
   become: yes
 
   vars_files:
-   - /home/debian/vars.yml
+   - vars.yml
 
   roles:
     - role: whiskerlabs.ssh-config
