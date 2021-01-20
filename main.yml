@@ -20,3 +20,8 @@
       apt:
         name: sshfs
         state: present
+        
+    - name: Install fish
+      apt:
+        name: fish
+        state: present
