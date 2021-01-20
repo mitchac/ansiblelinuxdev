@@ -19,3 +19,8 @@
       apt:
         name: dtrx
         state: present
+        
+    - name: Install fish
+      apt:
+        name: fish
+        state: present
