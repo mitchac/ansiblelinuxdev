@@ -7,7 +7,6 @@
 
   roles:
     - role: whiskerlabs.ssh-config
-    - name: stefangweichinger.ansible_rclone
     
   tasks:
     - name: Install neovim
