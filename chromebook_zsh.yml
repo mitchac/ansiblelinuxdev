@@ -1,0 +1,21 @@
+---
+- hosts: localhost
+  become: yes
+
+  roles:
+    - role: whiskerlabs.ssh-config
+    - role: viasite-ansible.zsh
+    
+  tasks:
+    - name: Install neovim
+      apt:
+        name: neovim
+        state: present
+        
+    - name: Install dtrx
+      apt:
+        name: dtrx
+        state: present
+        
+
+      
