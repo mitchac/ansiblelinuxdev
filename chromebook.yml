@@ -41,4 +41,5 @@
         
     - name: Install fundle plugins
       shell: |
+        fish
         fundle install
