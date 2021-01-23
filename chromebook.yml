@@ -38,3 +38,7 @@
           fundle plugin 'danhper/fish-ssh-agent'
           fundle init
         marker: ""
+        
+    - name: Install fundle plugins
+      shell: |
+        fundle install
