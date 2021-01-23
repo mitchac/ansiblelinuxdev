@@ -5,6 +5,7 @@
   roles:
     - role: whiskerlabs.ssh-config
     - role: manala.zsh
+    - name: brianhartsock.prezto
     
   tasks:
     - name: Install neovim
