@@ -4,7 +4,7 @@
 
   roles:
     - role: whiskerlabs.ssh-config
-    - role: viasite-ansible.zsh
+    - role: manala.zsh
     
   tasks:
     - name: Install neovim
