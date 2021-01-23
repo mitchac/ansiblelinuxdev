@@ -1,3 +1,4 @@
 ---
 roles:
   - name: whiskerlabs.ssh-config
+  - name: viasite-ansible.zsh
