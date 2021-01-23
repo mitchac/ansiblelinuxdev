@@ -35,6 +35,5 @@
       blockinfile:
         path: "{{ lookup('env','HOME') }}/.config/fish/config.fish"
         block: |
-          Match User ansible-agent
-          PasswordAuthentication no
-          
+          fundle plugin 'danhper/fish-ssh-agent'
+          fundle init
