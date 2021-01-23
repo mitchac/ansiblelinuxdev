@@ -37,3 +37,4 @@
         block: |
           fundle plugin 'danhper/fish-ssh-agent'
           fundle init
+        marker: ""
