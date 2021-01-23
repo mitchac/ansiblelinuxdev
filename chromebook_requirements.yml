@@ -2,3 +2,4 @@
 roles:
   - name: whiskerlabs.ssh-config
   - name: manala.zsh
+  - name: brianhartsock.prezto
