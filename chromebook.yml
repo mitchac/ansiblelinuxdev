@@ -41,5 +41,6 @@
         
     - name: Install fundle plugins
       shell: |
-        fish
         fundle install
+      args:
+        executable: /usr/bin/fish
