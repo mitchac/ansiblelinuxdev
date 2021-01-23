@@ -2,9 +2,6 @@
 - hosts: localhost
   become: yes
 
-  vars_files:
-   - /home/mitchac/vars.yml
-
   roles:
     - role: whiskerlabs.ssh-config
     
@@ -23,3 +20,16 @@
       apt:
         name: fish
         state: present
+        
+    - name: Install fundle
+      shell: |
+        curl -sfL https://git.io/fundle-install | fish
+      
+    - name: Create fish config file
+      file:
+        path: "{{home}}/.config/fish/config.fish"
+        state: touch
+        mode: u=rw,g=r,o=r
+      become: true
+      become_method: sudo
+      become_user: "{{account}}"
