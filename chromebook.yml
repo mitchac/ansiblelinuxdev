@@ -30,3 +30,11 @@
         path: "{{ lookup('env','HOME') }}/.config/fish/config.fish"
         state: touch
         mode: u=rw,g=r,o=r
+          
+    - name: Populate fish config file
+      blockinfile:
+        path: "{{ lookup('env','HOME') }}/.config/fish/config.fish"
+        block: |
+          Match User ansible-agent
+          PasswordAuthentication no
+          
