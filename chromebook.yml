@@ -30,6 +30,3 @@
         path: "{{home}}/.config/fish/config.fish"
         state: touch
         mode: u=rw,g=r,o=r
-      become: true
-      become_method: sudo
-      become_user: "{{account}}"
