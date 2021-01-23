@@ -27,6 +27,6 @@
       
     - name: Create fish config file
       file:
-        path: "{{ansible_env.HOME}/.config/fish/config.fish"
+        path: "{{ lookup('ansible_env','HOME') }}/.config/fish/config.fish"
         state: touch
         mode: u=rw,g=r,o=r
