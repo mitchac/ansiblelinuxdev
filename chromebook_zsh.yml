@@ -35,7 +35,7 @@
       blockinfile:
         path: "{{ lookup('env','HOME') }}/.zshrc"
         block: |
-          source /path-to-antigen/antigen.zsh
+          source /usr/share/zsh-antigen/antigen.zsh
           antigen use oh-my-zsh
           antigen bundle history
           antigen bundle zsh-users/zsh-syntax-highlighting
