@@ -20,10 +20,7 @@
         name: dtrx
         state: present
         
-    - name: Install zsh-autosuggestions
+    - name: Install zsh-antigen
       apt:
-        name: zsh-autosuggestions
+        name: zsh-antigen
         state: present
-        
-
-      
