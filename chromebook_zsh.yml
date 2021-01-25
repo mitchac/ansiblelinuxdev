@@ -3,12 +3,11 @@
   become: yes
 
   vars_files:
-    - ../vars.yml
+    - vars.yml
 
   roles:
     - role: whiskerlabs.ssh-config
     - role: manala.zsh
-    #- name: brianhartsock.prezto
     
   tasks:
     - name: Install neovim
