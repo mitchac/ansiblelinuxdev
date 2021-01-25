@@ -24,3 +24,21 @@
       apt:
         name: zsh-antigen
         state: present
+        
+    - name: Create zsh config file
+      file:
+        path: "{{ lookup('env','HOME') }}/.zshrc"
+        state: touch
+        mode: u=rw,g=r,o=r
+          
+    - name: Populate zsh config file
+      blockinfile:
+        path: "{{ lookup('env','HOME') }}/.zshrc"
+        block: |
+          source /path-to-antigen/antigen.zsh
+          antigen use oh-my-zsh
+          antigen bundle history
+          antigen bundle zsh-users/zsh-syntax-highlighting
+          antigen theme robbyrussell
+          antigen apply
+        state: present
