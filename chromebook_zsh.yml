@@ -8,7 +8,7 @@
   roles:
     - role: whiskerlabs.ssh-config
     - role: manala.zsh
-    - name: brianhartsock.prezto
+    #- name: brianhartsock.prezto
     
   tasks:
     - name: Install neovim
@@ -19,6 +19,11 @@
     - name: Install dtrx
       apt:
         name: dtrx
+        state: present
+        
+    - name: Install zsh-autosuggestions
+      apt:
+        name: zsh-autosuggestions
         state: present
         
 
