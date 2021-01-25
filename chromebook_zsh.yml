@@ -15,11 +15,6 @@
         name: neovim
         state: present
         
-    - name: Install dtrx
-      apt:
-        name: dtrx
-        state: present
-        
     - name: Install zsh-antigen
       apt:
         name: zsh-antigen
