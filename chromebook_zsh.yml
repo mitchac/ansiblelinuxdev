@@ -45,19 +45,4 @@
           antigen theme robbyrussell
           antigen apply
         state: present
-    
-    - name: Config flathub
-      shell: |
-        flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-    
-    - name: Install flatpak
-      apt:
-        name: flatpak
-        state: present
-        
-    - name: Install firefox
-      flatpak:
-        name: org.mozilla.firefox
-        state: present
-        remote: flathub
         
