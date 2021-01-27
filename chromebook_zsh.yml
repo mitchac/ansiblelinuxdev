@@ -60,3 +60,4 @@
         name: org.mozilla.firefox
         state: present
         remote: flathub
+        
