@@ -7,14 +7,19 @@
 
   roles:
     - role: whiskerlabs.ssh-config
-    - role: manala.zsh
+    #- role: manala.zsh
     
   tasks:
     - name: Install neovim
       apt:
         name: neovim
         state: present
-        
+    
+    - name: Install zsh
+      apt:
+        name: zsh
+        state: present
+    
     - name: Install zsh-antigen
       apt:
         name: zsh-antigen
