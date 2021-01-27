@@ -56,5 +56,6 @@
         
     - name: Install firefox
       flatpak:
-        name: firefox
+        name: org.mozilla.firefox
         state: present
+        remote: flathub
