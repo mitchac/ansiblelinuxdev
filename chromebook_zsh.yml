@@ -44,5 +44,6 @@
           antigen bundle zsh-users/zsh-autosuggestions
           antigen theme robbyrussell
           antigen apply
+          zstyle :omz:plugins:ssh-agent identities mitch-ecdsa-141020
         state: present
         
