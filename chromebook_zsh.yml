@@ -49,3 +49,8 @@
       apt:
         name: flatpak
         state: present
+        
+    - name: Install firefox
+      flatpak:
+        name: firefox
+        state: present
