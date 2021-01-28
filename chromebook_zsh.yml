@@ -15,11 +15,6 @@
       apt:
         name: zsh
         state: present
-        
-    - name: Install fzf
-      apt:
-        name: fzf
-        state: present
     
     - name: Install zsh-antigen
       apt:
@@ -36,7 +31,6 @@
       blockinfile:
         path: "{{ lookup('env','HOME') }}/.zshrc"
         block: |
-          source /usr/share/doc/fzf/examples/key-bindings.zsh
           source /usr/share/zsh-antigen/antigen.zsh
           antigen use oh-my-zsh
           antigen bundle history
