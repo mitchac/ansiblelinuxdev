@@ -45,6 +45,7 @@
           antigen bundle zsh-autocomplete
           antigen theme robbyrussell
           antigen apply
+          source /usr/share/doc/fzf/examples/key-bindings.zsh
         state: present
         
     - name: Create ssh config file
