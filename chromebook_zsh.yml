@@ -7,7 +7,7 @@
     - "{{ lookup('env','HOME') }}/vars.yml"
 
   roles:
-    - role: robertdebock.git
+    #- role: robertdebock.git
     
   tasks:
     - name: Install neovim
@@ -57,4 +57,15 @@
         path: "{{ lookup('env','HOME') }}/.ssh/config"
         block: "{{ssh_config}}"
         state: present    
-        
+    
+    - name: Create git config file
+      file:
+        path: "{{ lookup('env','HOME') }}/.gitconfig"
+        state: touch
+        mode: u=rw,g=r,o=r
+          
+    - name: Populate git config file
+      blockinfile:
+        path: "{{ lookup('env','HOME') }}/.gitconfig"
+        block: "{{git_config}}"
+        state: present    
