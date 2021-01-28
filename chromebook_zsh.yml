@@ -46,6 +46,7 @@
           antigen theme robbyrussell
           antigen apply
           zstyle ':autocomplete:*' default-context history-incremental-search-backward
+          source share/doc/fzf/examples/key-bindings.zsh
         state: present
         
     - name: Create ssh config file
