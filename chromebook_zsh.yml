@@ -47,3 +47,15 @@
           zstyle :omz:plugins:ssh-agent identities mitch-ecdsa-141020
         state: present
         
+    - name: Create ssh config file
+      file:
+        path: "{{ lookup('env','HOME') }}/.ssh/config"
+        state: touch
+        mode: u=rw,g=r,o=r
+          
+    - name: Populate zsh config file
+      blockinfile:
+        path: "{{ lookup('env','HOME') }}/.ssh/config"
+        block: "{{ssh_config}}"
+        state: present    
+        
