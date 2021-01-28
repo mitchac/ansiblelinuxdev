@@ -46,6 +46,7 @@
           antigen theme robbyrussell
           antigen apply
           source /usr/share/doc/fzf/examples/key-bindings.zsh
+          source /usr/share/zsh/vendor-completions/_fzf
         state: present
         
     - name: Create ssh config file
