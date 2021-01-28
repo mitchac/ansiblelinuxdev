@@ -45,6 +45,7 @@
           antigen bundle zsh-autocomplete
           antigen theme robbyrussell
           antigen apply
+          zstyle ':autocomplete:*' default-context history-incremental-search-backward
         state: present
         
     - name: Create ssh config file
