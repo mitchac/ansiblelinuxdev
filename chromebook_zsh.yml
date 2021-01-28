@@ -42,7 +42,7 @@
           antigen bundle extract
           antigen bundle twang817/zsh-ssh-agent
           antigen bundle zsh-users/zsh-syntax-highlighting
-          antigen bundle zsh-autocomplete
+          #antigen bundle zsh-autocomplete
           antigen theme robbyrussell
           antigen apply
           source /usr/share/doc/fzf/examples/key-bindings.zsh
