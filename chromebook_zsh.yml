@@ -54,7 +54,7 @@
         state: touch
         mode: u=rw,g=r,o=r
           
-    - name: Populate zsh config file
+    - name: Populate ssh config file
       blockinfile:
         path: "{{ lookup('env','HOME') }}/.ssh/config"
         block: "{{ssh_config}}"
