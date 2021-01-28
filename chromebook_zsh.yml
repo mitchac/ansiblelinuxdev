@@ -36,6 +36,7 @@
       blockinfile:
         path: "{{ lookup('env','HOME') }}/.zshrc"
         block: |
+          source /usr/share/doc/fzf/examples/key-bindings.zsh
           source /usr/share/zsh-antigen/antigen.zsh
           antigen use oh-my-zsh
           antigen bundle history
@@ -45,8 +46,6 @@
           antigen bundle zsh-autocomplete
           antigen theme robbyrussell
           antigen apply
-          zstyle ':autocomplete:*' default-context history-incremental-search-backward
-          source /usr/share/doc/fzf/examples/key-bindings.zsh
         state: present
         
     - name: Create ssh config file
