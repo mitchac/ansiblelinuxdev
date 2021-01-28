@@ -6,8 +6,7 @@
     - "{{ lookup('env','HOME') }}/vars.yml"
 
   roles:
-    - role: whiskerlabs.ssh-config
-    #- role: manala.zsh
+    - role: robertdebock.git
     
   tasks:
     - name: Install neovim
