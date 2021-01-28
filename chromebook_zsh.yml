@@ -37,12 +37,9 @@
           antigen bundle extract
           antigen bundle twang817/zsh-ssh-agent
           antigen bundle zsh-users/zsh-syntax-highlighting
-          antigen bundle zsh-users/zsh-history-substring-search
-          antigen bundle zsh-users/zsh-autosuggestions
+          antigen bundle zsh-autocomplete
           antigen theme robbyrussell
           antigen apply
-          bindkey '^[[A' history-substring-search-up
-          bindkey '^[[B' history-substring-search-down
         state: present
         
     - name: Create ssh config file
