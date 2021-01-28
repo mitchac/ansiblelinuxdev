@@ -41,6 +41,8 @@
           antigen bundle zsh-users/zsh-autosuggestions
           antigen theme robbyrussell
           antigen apply
+          bindkey '^[[A' history-substring-search-up
+          bindkey '^[[B' history-substring-search-down
         state: present
         
     - name: Create ssh config file
