@@ -36,12 +36,14 @@
       blockinfile:
         path: "{{ lookup('env','HOME') }}/.zshrc"
         block: |
+          zstyle :omz:plugins:ssh-agent identities "{{ssh_keys}}"
           source /usr/share/zsh-antigen/antigen.zsh
           antigen use oh-my-zsh
           antigen bundle history
           antigen bundle extract
-          antigen bundle twang817/zsh-ssh-agent
+          antigen bundle ssh-agent
           antigen bundle zsh-users/zsh-syntax-highlighting
+          #antigen bundle zsh-autocomplete
           antigen theme robbyrussell
           antigen apply
           source /usr/share/doc/fzf/examples/key-bindings.zsh
