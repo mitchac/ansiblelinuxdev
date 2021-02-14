@@ -36,7 +36,7 @@
       blockinfile:
         path: "{{ lookup('env','HOME') }}/.zshrc"
         block: |
-          zstyle :omz:plugins:ssh-agent identities "{{ssh_keys}}"
+          zstyle :omz:plugins:ssh-agent identities "{{ssh_add_keys}}"
           source /usr/share/zsh-antigen/antigen.zsh
           antigen use oh-my-zsh
           antigen bundle history
